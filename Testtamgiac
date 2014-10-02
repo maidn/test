@@ -1,0 +1,31 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class testTamGiac {
+
+	@Test
+	public void tamGiacTest1() {
+		
+		String str = new String();
+		str = tG.tamGiac(2,3,6);
+		assertEquals("Khong phai tam giac.", str);
+	}
+	
+	@Test
+	public void tamGiacTest2() {
+		
+		String str = new String();
+		str = tG.tamGiac(3,4,5);
+		assertEquals("Tam giac vuong.", str);
+	}
+	
+	@Test
+	public void tamGiacTest3() {
+		
+		String str = new String();
+		str = tG.tamGiac(4,4,6);
+		assertEquals("Tam giac can.", str);
+	}
+}
